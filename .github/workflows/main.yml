@@ -21,9 +21,9 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    with:
-      repository: mrecos/test_repo
-      token: ${{ secrets.GitHub_PAT }} # `GitHub_PAT` is a secret that contains your PAT
+      with:
+        repository: mrecos/test_repo
+        token: ${{ secrets.GitHub_PAT }} # `GitHub_PAT` is a secret that contains your PAT
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
